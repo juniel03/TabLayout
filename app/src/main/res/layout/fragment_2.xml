@@ -19,23 +19,61 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_input_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
         android:layout_marginTop="15dp"
+        app:hintEnabled="false"
         android:layout_marginStart="15dp"
         android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
         app:boxBackgroundColor="@color/white"
-        android:backgroundTint="@color/white"
         app:startIconDrawable="@drawable/person"
+        app:startIconTint="@color/black"
         >
-
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="8dp"
             android:textColor="@color/black">
-
         </com.google.android.material.textfield.TextInputEditText>
-
     </com.google.android.material.textfield.TextInputLayout>
 
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="15dp"
+        android:textSize="18dp"
+        android:text="Contact Number" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/numberInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_marginTop="15dp"
+        app:hintEnabled="false"
+        android:layout_marginStart="15dp"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:boxBackgroundColor="@color/white"
+        app:prefixText="+63"
+        app:prefixTextAppearance="@color/black"
+        app:prefixTextColor="@color/black"
+        app:expandedHintEnabled="false"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:inputType="number"
+            android:textColor="@color/black">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
 </LinearLayout>

@@ -25,6 +25,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn"
         app:tabTextColor="@color/black"
         app:tabGravity="fill"
+        app:tabIndicatorColor="@color/white"
         app:tabIndicator="@drawable/tab_indicator"
         app:tabIndicatorAnimationMode="elastic"
         app:tabIndicatorGravity="stretch"

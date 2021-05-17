@@ -46,6 +46,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation "androidx.cardview:cardview:1.0.0"
     implementation 'com.orhanobut:dialogplus:1.11@aar'
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

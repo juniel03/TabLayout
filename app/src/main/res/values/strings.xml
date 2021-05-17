@@ -2,4 +2,8 @@
     <string name="app_name">TabLayout</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment 1 </string>
+    <string name="connect_with_phone_number"><u>Connect with Phone Number</u></string>
+    <string name="connect_with_facebook"><u>Connect with Facebook</u></string>
+    <string name="connect_with_gmail"><u>Connect with Gmail</u></string>
+    <string name="connect_with_kakaotalk"><u>Connect with KakaoTalk</u></string>
 </resources>

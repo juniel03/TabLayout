@@ -154,7 +154,7 @@
                 android:layout_marginBottom="25dp"
                 app:backgroundTint="#FAD036"
                 android:background="@drawable/btn_bg"
-                android:text="ACCEPT MF"
+                android:text="ACCEPT"
                 android:textColor="@android:color/black" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>

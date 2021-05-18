@@ -48,6 +48,8 @@ dependencies {
     implementation 'com.orhanobut:dialogplus:1.11@aar'
     implementation 'com.github.aabhasr1:OtpView:v1.1.2'
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.android.support:design:30.0.0'
+
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

@@ -10,6 +10,7 @@ import com.squareup.picasso.Picasso
 
 class HorizontalRecyclerViewAdapter (val list: ArrayList<String>) :
     RecyclerView.Adapter<HorizontalRecyclerViewAdapter.MyView>() {
+
     class MyView(view: View) : RecyclerView.ViewHolder(view){
         var imageView: ImageView
         init {

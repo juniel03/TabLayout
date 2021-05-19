@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/shapeableImageView"
+        android:id="@+id/item_image"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="16dp"
@@ -17,7 +17,7 @@
         app:shapeAppearanceOverlay="@style/RoundedSquare" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/item_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -28,9 +28,9 @@
         android:textAlignment="viewStart"
         android:textColor="@android:color/black"
         android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView"
+        app:layout_constraintEnd_toEndOf="@+id/item_image"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/item_image" />
 
     <RatingBar
         android:id="@+id/ratingBar7"
@@ -43,10 +43,10 @@
         android:progressTint="#FFCC01"
         android:rating="5"
         android:stepSize="0.5"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/item_title"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintStart_toStartOf="@+id/item_title"
+        app:layout_constraintTop_toBottomOf="@+id/item_title" />
 
     <TextView
         android:id="@+id/textView5"

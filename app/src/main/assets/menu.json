@@ -1,0 +1,44 @@
+{
+  "menu":[
+    {
+      "Category":"Burgers",
+      "items":[
+        {"title": "b1", "description":  "asd123", "image": "https://i.insider.com/57d961d5077dcc3d018b5b9c?width=412&format=jpeg"},
+        {"title": "b2", "description":  "asd456", "image": "https://www.wideopeneats.com/wp-content/uploads/2020/02/ezgif.com-gif-maker3.png"},
+        {"title": "b3", "description":  "asd789", "image": "https://i.insider.com/55d358c52acae70f008c11f2?width=1000&format=jpeg&auto=webp"},
+        {"title": "b4", "description":  "asd101112", "image": "https://qph.fs.quoracdn.net/main-qimg-1c335f3b8d9236ad17dbe08080951a66.webp"},
+        {"title": "b5", "description":  "asd121314", "image": "https://static.wikia.nocookie.net/spongebob/images/2/2f/Krusty_Krab_Training_Video_081.png/revision/latest?cb=20190909225328"}
+      ]
+    },
+    {
+      "Category":"Chicken",
+      "items":[
+        {"title": "c1", "description":  "asd123", "image": "https://www.oliviascuisine.com/wp-content/uploads/2019/10/fried-chicken-thumb-720x540.jpg"},
+        {"title": "c2", "description":  "asd456", "image": "https://www.thespruceeats.com/thmb/4QUIYqDCxzubLJmYFDwgr9GgBBk=/1333x1000/smart/filters:no_upscale()/terris-crispy-fried-chicken-legs-3056879-10_preview-5b05ec40a474be00362260d7.jpeg"},
+        {"title": "c3", "description":  "asd789", "image": "https://dinnerthendessert.com/wp-content/uploads/2019/01/Fried-Chicken-2.jpg"},
+        {"title": "c4", "description":  "asd101112", "image": "https://www.browneyedbaker.com/wp-content/uploads/2020/12/buttermilk-fried-chicken-12-square.jpg"},
+        {"title": "c5", "description":  "asd121314", "image": "https://www.jessicagavin.com/wp-content/uploads/2014/01/buttermilk-fried-chicken-11-1200.jpg"}
+      ]
+    },
+    {
+      "Category":"float",
+      "items":[
+        {"title": "f1", "description":  "asd123", "image": "https://i0.wp.com/themissinglokness.com/wp-content/uploads/2017/04/BJG_8911.jpg?resize=680%2C1020"},
+        {"title": "f2", "description":  "asd456", "image": "https://www.eatingonadime.com/wp-content/uploads/2017/07/fanta-float-square.jpg"},
+        {"title": "f3", "description":  "asd789", "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Cola_Float.jpg"},
+        {"title": "f4", "description":  "asd101112", "image": "https://i.pinimg.com/originals/b1/15/f5/b115f59951472ffc18cb9bbd125fce81.jpg"},
+        {"title": "f5", "description":  "asd121314", "image": "https://lmld.org/wp-content/uploads/2021/02/Strawberries-and-Cream-Float-8.jpg"}
+      ]
+    },
+    {
+      "Category":"fckers",
+      "items":[
+        {"title": "fck1", "description":  "asd123", "image": "https://image.freepik.com/free-vector/fuck-you-symbol-comic-style_52683-47788.jpg"},
+        {"title": "fck2", "description":  "asd456", "image": "https://image.shutterstock.com/image-vector/middle-finger-sign-by-male-600w-395931637.jpg"},
+        {"title": "fck3", "description":  "asd789", "image": "https://image.shutterstock.com/image-vector/skull-fuck-finger-hand-vector-600w-1369515260.jpg"},
+        {"title": "fck4", "description":  "asd101112", "image": "https://image.freepik.com/free-vector/floral-middle-finger-fuck-you-symbol_23-2148667365.jpg"},
+        {"title": "fck5", "description":  "asd121314", "image": "https://image.shutterstock.com/z/stock-vector-hand-gesture-fuck-you-symbol-middle-finger-sign-cartoon-vector-illustration-sticker-587857943.jpg"}
+      ]
+    }
+  ]
+}

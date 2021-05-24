@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/menu_item_image"
@@ -14,7 +14,8 @@
         android:src="@drawable/sampleprofile"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:shapeAppearanceOverlay="@style/RoundedSquare" />
+        app:shapeAppearanceOverlay="@style/RoundedSquare"
+        android:layout_marginLeft="16dp" />
 
     <TextView
         android:id="@+id/menu_item_title"
@@ -31,16 +32,18 @@
         app:layout_constraintBottom_toBottomOf="@+id/menu_item_image"
         app:layout_constraintStart_toEndOf="@+id/menu_item_image"
         app:layout_constraintTop_toTopOf="@+id/menu_item_image"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginLeft="16dp"
+        android:gravity="start" />
 
     <TextView
         android:id="@+id/menu_item_description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:textColor="@android:color/darker_gray"
         android:text="Chicken patty, lettuce, tomato, and seasoning sauce"
-        app:layout_constraintEnd_toEndOf="@+id/menu_item_title"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/menu_item_title"
         app:layout_constraintTop_toBottomOf="@+id/menu_item_title" />
 

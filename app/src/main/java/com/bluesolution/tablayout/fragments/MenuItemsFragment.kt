@@ -1,11 +1,15 @@
 package com.bluesolution.tablayout.fragments
 
+import DividerItemDecorator
+import android.graphics.Rect
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bluesolution.tablayout.R
@@ -36,6 +40,11 @@ class MenuItemsFragment : Fragment(), MenuItemsAdapter.OnItemClickListener {
             menu = bundle.getParcelable("menu")!!
             val menuItem: List<Item> = menu.items
             rec.adapter = MenuItemsAdapter(menuItem = menuItem,listener =  this)
+            val dividerItemDecoration: RecyclerView.ItemDecoration = DividerItemDecorator(activity?.let {
+                ContextCompat.getDrawable(
+                    it, R.drawable.divider)
+            }!!)
+            rec.addItemDecoration(dividerItemDecoration)
         }
     }
 

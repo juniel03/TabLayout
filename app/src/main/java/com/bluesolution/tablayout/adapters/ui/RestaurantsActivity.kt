@@ -44,6 +44,7 @@ class RestaurantsActivity : AppCompatActivity() {
             binding.tabLayout.addTab(binding.tabLayout.newTab().setText(menuItem.Category))
             titles.add(menuItem.Category)
         }
+        binding.viewPagerMenu.isUserInputEnabled = false
         binding.viewPagerMenu.adapter = MenuPagesAdapter(menuList, supportFragmentManager, lifecycle)
         binding.tabLayout.setupWithViewPager(binding.viewPagerMenu, titles)
 

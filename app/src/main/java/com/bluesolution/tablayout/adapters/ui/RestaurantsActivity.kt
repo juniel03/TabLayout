@@ -14,6 +14,8 @@ import com.bluesolution.tablayout.adapters.MenuPagesAdapter
 import com.bluesolution.tablayout.data.CategoryData
 import com.bluesolution.tablayout.data.Menu
 import com.bluesolution.tablayout.data.RestaurantInfo
+import com.bluesolution.tablayout.data.live.Data
+import com.bluesolution.tablayout.data.live.LiveModel
 import com.bluesolution.tablayout.databinding.ActivityRestaurantsBinding
 import com.bluesolution.tablayout.util.TabLayout_Util
 import com.google.android.material.tabs.TabLayout
@@ -34,11 +36,21 @@ class RestaurantsActivity : AppCompatActivity() {
         binding = ActivityRestaurantsBinding.inflate(layoutInflater)
         val view = binding.root
         val titles = ArrayList<String>()
+        val data:List<Data>
         setContentView(view)
         Log.d("tag", "restaurant activity")
         val json = this.assets.readFile("menu.json")
+        val jsonlive = this.assets.readFile("livemenu.json")
+        val liveCategory = liveConvert(jsonlive)
         val category = jsonConvert(json)
         Log.d("tag", "category ${category.menu.size}")
+        Log.d("tag", "live size ${liveCategory.data.size}")
+
+        data = liveCategory.data
+        Log.d("tag", "data $data")
+
+        val top = data.groupBy{it.top}
+        Log.d("tag", "top $top")
         for (menuItem in category.menu){
             menuList.add(menuItem)
             binding.tabLayout.addTab(binding.tabLayout.newTab().setText(menuItem.Category))
@@ -74,5 +86,8 @@ class RestaurantsActivity : AppCompatActivity() {
 
     fun jsonConvert(jsonString: String) : CategoryData {
         return Gson().fromJson(jsonString, CategoryData::class.java)
+    }
+    fun liveConvert(jsonString: String) : LiveModel {
+        return Gson().fromJson(jsonString, LiveModel::class.java)
     }
 }

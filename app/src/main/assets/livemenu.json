@@ -1,0 +1,71 @@
+{
+  "code": "200",
+  "message": "성공",
+  "data": [
+    {
+      "key": "374",
+      "top": "대표메뉴(Best Seller)",
+      "name": "김밥 [Kim Bab]",
+      "ex": "",
+      "price": "160",
+      "discountRate": "0",
+      "orignPrice": "160",
+      "img": [
+        "https://s3-ap-southeast-1.amazonaws.com/image.letsbee.co.kr/cmsdata/web_upload/comp/menu/thumb/20200604/1591236698447VW8Y5O6VFYOS8GGAP2WQLF4KA.jpg"
+      ],
+      "status": "10"
+    },
+    {
+      "key": "376",
+      "top": "대표메뉴(Best Seller)",
+      "name": "떡볶이 [Tteok Bokki]",
+      "ex": "",
+      "price": "128",
+      "discountRate": "0",
+      "orignPrice": "128",
+      "img": [
+        "https://s3-ap-southeast-1.amazonaws.com/image.letsbee.co.kr/cmsdata/web_upload/comp/menu/thumb/20200604/159123669830731CT3DOWGVOP21KECUSVQ5FV8.jpg"
+      ],
+      "status": "10"
+    },
+    {
+      "key": "377",
+      "top": "대표메뉴(Best Seller)",
+      "name": "꼬치오뎅 [Ggochi Odeng]",
+      "ex": "",
+      "price": "43",
+      "discountRate": "0",
+      "orignPrice": "43",
+      "img": [
+        "https://s3-ap-southeast-1.amazonaws.com/image.letsbee.co.kr/cmsdata/web_upload/comp/menu/thumb/20200604/15912366981829CAJGU34QYKCZNK3MVZ5FR0J5.jpg"
+      ],
+      "status": "10"
+    },
+    {
+      "key": "375",
+      "top": "식사류(Meals)",
+      "name": "라면 [Ramyun]",
+      "ex": "",
+      "price": "160",
+      "discountRate": "0",
+      "orignPrice": "160",
+      "img": [
+        "https://s3-ap-southeast-1.amazonaws.com/image.letsbee.co.kr/cmsdata/web_upload/comp/menu/thumb/20200604/1591236698369FU5KVBGK0H5H00CT75WEHWZ22.jpg"
+      ],
+      "status": "10"
+    },
+    {
+      "key": "378",
+      "top": "식사류(Meals)",
+      "name": "떡만두국 [Dduk Manduguk]",
+      "ex": "",
+      "price": "300",
+      "discountRate": "0",
+      "orignPrice": "300",
+      "img": [
+        "https://s3-ap-southeast-1.amazonaws.com/image.letsbee.co.kr/cmsdata/web_upload/comp/menu/thumb/20200604/1591236698104IR8RPHH670G1S2LAC8EJCEKDS.jpg"
+      ],
+      "status": "10"
+    }
+  ]
+}

@@ -1,16 +1,19 @@
 package com.bluesolution.tablayout.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bluesolution.tablayout.R
 import com.bluesolution.tablayout.adapters.HorizontalRecyclerViewAdapter
 import com.bluesolution.tablayout.databinding.Fragment1Binding
 import com.orhanobut.dialogplus.DialogPlus
+import com.orhanobut.dialogplus.OnClickListener
 import com.orhanobut.dialogplus.OnItemClickListener
 import com.orhanobut.dialogplus.ViewHolder
 
@@ -49,13 +52,12 @@ class Fragment1 : Fragment() {
 
         binding.button.setOnClickListener {
             val dialog = DialogPlus.newDialog(activity)
-                .setOnItemClickListener(object : OnItemClickListener {
-                    override fun onItemClick(
-                        dialog: DialogPlus?,
-                        item: Any?,
-                        view: View?,
-                        position: Int
-                    ) {
+                .setOnClickListener(object: OnClickListener{
+                    override fun onClick(dialog: DialogPlus?, view: View?) {
+                     when(view!!.id){
+                         R.id.btnAccept -> Toast.makeText(activity, "accept", Toast.LENGTH_SHORT).show()
+                         R.id.close -> dialog!!.dismiss()
+                     }
                     }
                 })
                 .setContentBackgroundResource(android.R.color.transparent)

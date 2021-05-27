@@ -8,7 +8,7 @@
     android:background="@color/white">
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="500dp"
         android:fitsSystemWindows="true"
         >
         <com.google.android.material.appbar.CollapsingToolbarLayout
@@ -26,7 +26,7 @@
                 app:layout_collapseMode="pin"/>
             <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="350dp"
                 app:layout_collapseMode="pin"/>
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -36,13 +36,14 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/layout_bg"
                     android:layout_alignParentBottom="true">
+
                     <TextView
-                        android:id="@+id/textView12"
+                        android:id="@+id/store_name"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:layout_marginTop="25dp"
+                        android:layout_marginTop="16dp"
                         android:text="WcDonald's SM Clark"
+                        android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="25dp"
                         android:textStyle="bold"
@@ -51,7 +52,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <RatingBar
-                        android:id="@+id/ratingBar7"
+                        android:id="@+id/star_rating"
                         style="@android:style/Widget.Material.RatingBar.Small"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -64,7 +65,7 @@
                         android:stepSize="0.5"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+                        app:layout_constraintTop_toBottomOf="@+id/store_name" />
 
                     <TextView
                         android:id="@+id/textView5"
@@ -74,9 +75,9 @@
                         android:text="5.0"
                         android:textSize="12dp"
                         android:textColor="@color/black"
-                        app:layout_constraintBottom_toBottomOf="@+id/ratingBar7"
-                        app:layout_constraintStart_toEndOf="@+id/ratingBar7"
-                        app:layout_constraintTop_toTopOf="@+id/ratingBar7" />
+                        app:layout_constraintBottom_toBottomOf="@+id/star_rating"
+                        app:layout_constraintStart_toEndOf="@+id/star_rating"
+                        app:layout_constraintTop_toTopOf="@+id/star_rating" />
                     <View
                         android:id="@+id/view"
                         android:layout_width="match_parent"
@@ -88,7 +89,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/ratingBar7" />
+                        app:layout_constraintTop_toBottomOf="@id/star_rating" />
 
                     <TextView
                         android:id="@+id/storeDistance"
@@ -147,7 +148,7 @@
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
                         android:layout_marginBottom="4dp"
                         android:background="@android:color/white"

@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
+ 
 //        if (Build.VERSION.SDK_INT >= 19 && Build.VERSION.SDK_INT < 21) {
 //            setWindowFlag(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, true)
 //        }

@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/item_image" />
 
     <RatingBar
-        android:id="@+id/ratingBar7"
+        android:id="@+id/star_rating"
         style="@android:style/Widget.Material.RatingBar.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,9 +55,9 @@
         android:layout_marginStart="8dp"
         android:text="5.0"
         android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/ratingBar7"
-        app:layout_constraintStart_toEndOf="@+id/ratingBar7"
-        app:layout_constraintTop_toTopOf="@+id/ratingBar7" />
+        app:layout_constraintBottom_toBottomOf="@+id/star_rating"
+        app:layout_constraintStart_toEndOf="@+id/star_rating"
+        app:layout_constraintTop_toTopOf="@+id/star_rating" />
 
     <TextView
         android:id="@+id/textView6"
@@ -66,8 +66,8 @@
         android:layout_marginTop="4dp"
         android:text="10.8 KM"
         android:textSize="12dp"
-        app:layout_constraintStart_toStartOf="@+id/ratingBar7"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBar7" />
+        app:layout_constraintStart_toStartOf="@+id/star_rating"
+        app:layout_constraintTop_toBottomOf="@+id/star_rating" />
 
     <TextView
         android:id="@+id/textView7"

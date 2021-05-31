@@ -2,43 +2,70 @@
     "code": "200",
     "message": "성공",
     "data": {
-        "name": "교촌 후라이드",
-        "ex": "교촌치킨 후라이드",
-        "price": "1070",
+        "name": "Super Meal A",
+        "ex": "1 pc Chickenjoy, burger steak, half jolly spaghetti, rice &amp; drink",
+        "price": "170",
         "discountRate": "0",
-        "orignPrice": "1070",
+        "orignPrice": "170",
         "imgPath": [
-            "https://s3-ap-southeast-1.amazonaws.com/image.letsbee.co.kr/cmsdata/web_upload/comp/menu/20191205/15755114571728U8L0Y1QIJP5UJAJIU783RS3Z.jpg"
+            "https:\/\/s3-ap-southeast-1.amazonaws.com\/image.letsbee.co.kr\/cmsdata\/web_upload\/comp\/menu\/20200807\/1596803522231A1BB3SPXMNAWM0U9QRFAQY66O.png"
         ],
-        "menu_ctg_name": "대표메뉴 (Best Seller)",
+        "menu_ctg_name": "Best Seller",
         "max_count": "",
         "menu_sttus_code": 1,
         "poption": [
             {
-                "group": "test",
-                "value": "test",
-                "key": "17",
+                "value": "Spicy",
+                "group": "Option1",
+                "key": "5234",
                 "musy_yn": "Y",
-                "origin": "214",
-                "price": "214",
+                "origin": "3",
+                "price": "3",
                 "adult_yn": "N"
             },
             {
-                "group": "사이드 추가",
-                "value": "무 추가",
-                "key": "14",
-                "musy_yn": "N",
-                "origin": "11",
-                "price": "11",
+                "value": "Original",
+                "group": "Option1",
+                "key": "5233",
+                "musy_yn": "Y",
+                "origin": "0",
+                "price": "0",
                 "adult_yn": "N"
             },
             {
-                "group": "사이드 추가",
-                "value": "소스 추가",
-                "key": "15",
-                "musy_yn": "N",
-                "origin": "21",
-                "price": "21",
+                "value": "Go Large Iced Tea",
+                "group": "Drink (Choose 1)",
+                "key": "5232",
+                "musy_yn": "Y",
+                "origin": "30",
+                "price": "30",
+                "adult_yn": "N"
+            },
+            {
+                "value": "Go Large Coke",
+                "group": "Drink (Choose 1)",
+                "key": "5227",
+                "musy_yn": "Y",
+                "origin": "25",
+                "price": "25",
+                "adult_yn": "N"
+            },
+            {
+                "value": "Regular Iced Tea ",
+                "group": "Drink (Choose 1)",
+                "key": "5226",
+                "musy_yn": "Y",
+                "origin": "0",
+                "price": "0",
+                "adult_yn": "N"
+            },
+            {
+                "value": "Regular Coke ",
+                "group": "Drink (Choose 1)",
+                "key": "5221",
+                "musy_yn": "Y",
+                "origin": "0",
+                "price": "0",
                 "adult_yn": "N"
             }
         ],

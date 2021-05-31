@@ -1,7 +1,9 @@
 package com.bluesolution.tablayout.data.live
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
 data class LiveModel(
-    val code: String,
-    val data: List<Data>,
-    val message: String
-)
+    val data: List<Data>
+):Parcelable

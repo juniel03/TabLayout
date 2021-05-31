@@ -3,6 +3,7 @@ package com.bluesolution.tablayout.fragments
 import DividerItemDecorator
 import android.graphics.Rect
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -16,6 +17,8 @@ import com.bluesolution.tablayout.R
 import com.bluesolution.tablayout.adapters.MenuItemsAdapter
 import com.bluesolution.tablayout.data.Item
 import com.bluesolution.tablayout.data.Menu
+import com.bluesolution.tablayout.data.live.Data
+import com.bluesolution.tablayout.data.live.LiveModel
 
 
 class MenuItemsFragment : Fragment(), MenuItemsAdapter.OnItemClickListener {
@@ -33,13 +36,14 @@ class MenuItemsFragment : Fragment(), MenuItemsAdapter.OnItemClickListener {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val menu: Menu
+        val data: LiveModel
+
         arguments?.let {bundle ->
             val rec = view.findViewById<RecyclerView>(R.id.itemsRecyclerview)
             rec.layoutManager = LinearLayoutManager(activity)
-            menu = bundle.getParcelable("menu")!!
-            val menuItem: List<Item> = menu.items
-            rec.adapter = MenuItemsAdapter(menuItem = menuItem,listener =  this)
+            data = bundle.getParcelable("livedata")!!
+            Log.d("tag", "fragment live data $data")
+            rec.adapter = MenuItemsAdapter(dataItem = data.data,listener =  this)
             val dividerItemDecoration: RecyclerView.ItemDecoration = DividerItemDecorator(activity?.let {
                 ContextCompat.getDrawable(
                     it, R.drawable.divider)
@@ -48,8 +52,8 @@ class MenuItemsFragment : Fragment(), MenuItemsAdapter.OnItemClickListener {
         }
     }
 
-    override fun onItemClick(position: Int, item: Item) {
-        Toast.makeText(activity, "position $position , Item Title = ${item.title}, Item description = ${item.description}, Item Image = ${item.image}", Toast.LENGTH_SHORT).show()
+    override fun onItemClick(position: Int, item: Data) {
+        Toast.makeText(activity, "position $position , Item Title = ${item.name}, Item description = ${item.status}, Item Image = ${item.img[0]}", Toast.LENGTH_SHORT).show()
     }
 
 }

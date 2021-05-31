@@ -1,0 +1,47 @@
+{
+    "code": "200",
+    "message": "성공",
+    "data": {
+        "name": "교촌 후라이드",
+        "ex": "교촌치킨 후라이드",
+        "price": "1070",
+        "discountRate": "0",
+        "orignPrice": "1070",
+        "imgPath": [
+            "https://s3-ap-southeast-1.amazonaws.com/image.letsbee.co.kr/cmsdata/web_upload/comp/menu/20191205/15755114571728U8L0Y1QIJP5UJAJIU783RS3Z.jpg"
+        ],
+        "menu_ctg_name": "대표메뉴 (Best Seller)",
+        "max_count": "",
+        "menu_sttus_code": 1,
+        "poption": [
+            {
+                "group": "test",
+                "value": "test",
+                "key": "17",
+                "musy_yn": "Y",
+                "origin": "214",
+                "price": "214",
+                "adult_yn": "N"
+            },
+            {
+                "group": "사이드 추가",
+                "value": "무 추가",
+                "key": "14",
+                "musy_yn": "N",
+                "origin": "11",
+                "price": "11",
+                "adult_yn": "N"
+            },
+            {
+                "group": "사이드 추가",
+                "value": "소스 추가",
+                "key": "15",
+                "musy_yn": "N",
+                "origin": "21",
+                "price": "21",
+                "adult_yn": "N"
+            }
+        ],
+        "soption": []
+    }
+}

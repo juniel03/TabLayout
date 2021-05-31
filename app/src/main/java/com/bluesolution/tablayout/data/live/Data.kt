@@ -1,5 +1,9 @@
 package com.bluesolution.tablayout.data.live
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
 data class Data(
     val discountRate: String,
     val ex: String,
@@ -10,4 +14,4 @@ data class Data(
     val price: String,
     val status: String,
     val top: String
-)
+):Parcelable

@@ -28,37 +28,46 @@ import kotlin.collections.ArrayList
 class RestaurantsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRestaurantsBinding
-    var menuList = ArrayList<Menu>()
-
+    var liveDataList = ArrayList<LiveModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRestaurantsBinding.inflate(layoutInflater)
         val view = binding.root
-        val titles = ArrayList<String>()
+
         val data:List<Data>
+
+        val livetitles = ArrayList<String>()
+        var liveList = ArrayList<List<Data>>()
+
         setContentView(view)
         Log.d("tag", "restaurant activity")
-        val json = this.assets.readFile("menu.json")
         val jsonlive = this.assets.readFile("livemenu.json")
         val liveCategory = liveConvert(jsonlive)
-        val category = jsonConvert(json)
-        Log.d("tag", "category ${category.menu.size}")
+
         Log.d("tag", "live size ${liveCategory.data.size}")
 
         data = liveCategory.data
         Log.d("tag", "data $data")
 
         val top = data.groupBy{it.top}
-        Log.d("tag", "top $top")
-        for (menuItem in category.menu){
-            menuList.add(menuItem)
-            binding.tabLayout.addTab(binding.tabLayout.newTab().setText(menuItem.Category))
-            titles.add(menuItem.Category)
+        val keys = top.keys
+
+        Log.d("tag", "keys $keys")
+
+        for (key in keys){
+            Log.d("tag", "item per $key ${top.get(key)}")
+            val data = top.get(key)
+            liveList.add(data!!)
+            liveDataList.add(LiveModel(data))
+            binding.tabLayout.addTab(binding.tabLayout.newTab().setText(key))
+            livetitles.add(key)
         }
+
         binding.viewPagerMenu.isUserInputEnabled = false
-        binding.viewPagerMenu.adapter = MenuPagesAdapter(menuList, supportFragmentManager, lifecycle)
-        binding.tabLayout.setupWithViewPager(binding.viewPagerMenu, titles)
+        binding.viewPagerMenu.adapter = MenuPagesAdapter(liveDataList, supportFragmentManager, lifecycle)
+
+        binding.tabLayout.setupWithViewPager(binding.viewPagerMenu, livetitles)
 
         for (i in 0 until binding.tabLayout.getTabCount()) {
             val tab = (binding.tabLayout.getChildAt(0) as ViewGroup).getChildAt(i)
@@ -69,7 +78,7 @@ class RestaurantsActivity : AppCompatActivity() {
 
     }
         fun TabLayout.setupWithViewPager(viewPager: ViewPager2, labels: ArrayList<String>) {
-
+        Log.d("tag", "labels size ${labels.size} number of items ${viewPager.adapter?.itemCount}")
         if (labels.size != viewPager.adapter?.itemCount)
             throw Exception("The size of list and the tab count should be equal!")
 

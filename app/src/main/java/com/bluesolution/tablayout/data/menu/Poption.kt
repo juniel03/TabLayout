@@ -1,5 +1,9 @@
 package com.bluesolution.tablayout.data.menu
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
 data class Poption(
     val adult_yn: String,
     val group: String,
@@ -8,4 +12,4 @@ data class Poption(
     val origin: String,
     val price: String,
     val value: String
-)
+):Parcelable

@@ -1,5 +1,9 @@
 package com.bluesolution.tablayout.data.menu
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
 data class Data(
     val discountRate: String,
     val ex: String,
@@ -10,6 +14,5 @@ data class Data(
     val name: String,
     val orignPrice: String,
     val poption: List<Poption>,
-    val price: String,
-    val soption: List<Any>
-)
+    val price: String
+):Parcelable

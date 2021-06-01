@@ -6,7 +6,7 @@
       "key": "374",
       "top": "대표메뉴(Best Seller)",
       "name": "김밥 [Kim Bab]",
-      "ex": "",
+      "ex": "1",
       "price": "160",
       "discountRate": "0",
       "orignPrice": "160",
@@ -19,7 +19,7 @@
       "key": "376",
       "top": "대표메뉴(Best Seller)",
       "name": "떡볶이 [Tteok Bokki]",
-      "ex": "",
+      "ex": "2",
       "price": "128",
       "discountRate": "0",
       "orignPrice": "128",
@@ -32,7 +32,20 @@
       "key": "377",
       "top": "대표메뉴(Best Seller)",
       "name": "꼬치오뎅 [Ggochi Odeng]",
-      "ex": "",
+      "ex": "3",
+      "price": "43",
+      "discountRate": "0",
+      "orignPrice": "43",
+      "img": [
+        "https://s3-ap-southeast-1.amazonaws.com/image.letsbee.co.kr/cmsdata/web_upload/comp/menu/thumb/20200604/15912366981829CAJGU34QYKCZNK3MVZ5FR0J5.jpg"
+      ],
+      "status": "10"
+    },
+    {
+      "key": "377",
+      "top": "대표메뉴(Best Seller)",
+      "name": "꼬치오뎅 [Ggochi Odeng]",
+      "ex": "4",
       "price": "43",
       "discountRate": "0",
       "orignPrice": "43",
@@ -45,7 +58,7 @@
       "key": "375",
       "top": "식사류(Meals)",
       "name": "라면 [Ramyun]",
-      "ex": "",
+      "ex": "1",
       "price": "160",
       "discountRate": "0",
       "orignPrice": "160",
@@ -58,7 +71,33 @@
       "key": "378",
       "top": "식사류(Meals)",
       "name": "떡만두국 [Dduk Manduguk]",
-      "ex": "",
+      "ex": "2",
+      "price": "300",
+      "discountRate": "0",
+      "orignPrice": "300",
+      "img": [
+        "https://s3-ap-southeast-1.amazonaws.com/image.letsbee.co.kr/cmsdata/web_upload/comp/menu/thumb/20200604/1591236698104IR8RPHH670G1S2LAC8EJCEKDS.jpg"
+      ],
+      "status": "10"
+    },
+    {
+      "key": "375",
+      "top": "식사류(Meals)",
+      "name": "라면 [Ramyun]",
+      "ex": "3",
+      "price": "160",
+      "discountRate": "0",
+      "orignPrice": "160",
+      "img": [
+        "https://s3-ap-southeast-1.amazonaws.com/image.letsbee.co.kr/cmsdata/web_upload/comp/menu/thumb/20200604/1591236698369FU5KVBGK0H5H00CT75WEHWZ22.jpg"
+      ],
+      "status": "10"
+    },
+    {
+      "key": "378",
+      "top": "식사류(Meals)",
+      "name": "떡만두국 [Dduk Manduguk]",
+      "ex": "4",
       "price": "300",
       "discountRate": "0",
       "orignPrice": "300",

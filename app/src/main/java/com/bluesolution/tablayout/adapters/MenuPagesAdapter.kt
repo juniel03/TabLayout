@@ -15,8 +15,6 @@ class MenuPagesAdapter(var livelist: ArrayList<LiveModel>, fragmentManager: Frag
     override fun getItemCount(): Int = livelist.size
 
     override fun createFragment(position: Int): Fragment = MenuItemsFragment().apply {
-//        val model: LiveModel = LiveModel(dataItems[position])
-//        Log.d("tag", "pages adater model $model")
         arguments = bundleOf(
             "livedata" to livelist[position]
         )
